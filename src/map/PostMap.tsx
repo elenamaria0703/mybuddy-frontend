@@ -1,7 +1,6 @@
 import React from "react";
 import {GoogleMap, Marker, withGoogleMap, withScriptjs} from 'react-google-maps';
 import {compose, withProps} from 'recompose';
-import {mapsApiKey} from '../profile/mapsApiKey';
 
 
 interface MyMapProps {
@@ -16,7 +15,7 @@ export const PostMap =
     compose<MyMapProps, any>(
         withProps({
             googleMapURL:
-                `https://maps.googleapis.com/maps/api/js?key=${mapsApiKey}&v=3.exp&libraries=geometry,drawing,places`,
+                `https://maps.googleapis.com/maps/api/js?key='key'&v=3.exp&libraries=geometry,drawing,places`,
             loadingElement: <div style={{height: `43vh`}}/>,
             containerElement: <div style={{height: `43vh`}}/>,
             mapElement: <div style={{height: `43vh`}}/>

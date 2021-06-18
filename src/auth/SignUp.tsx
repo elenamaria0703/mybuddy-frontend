@@ -163,7 +163,7 @@ export const SignUp: React.FC<SignUpProviderProps> = ({children}) => {
 
     return (
         <IonPage>
-            <IonContent>
+            <IonContent className={"news-feed-content"} fullscreen>
                 <NavBar/>
                 <Row style={{marginTop: '40px'}}>
                     <Col id={"inputCol"}>

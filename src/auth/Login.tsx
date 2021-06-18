@@ -41,14 +41,14 @@ export const Login: React.FC<RouteComponentProps> = ({ history }) => {
   }
   return (
     <IonPage>
-      <IonContent>
+      <IonContent className={"news-feed-content"} fullscreen>
         <NavBar/>
         <Container >
           <Row style={{marginTop:'40px'}}>
             <Col >
             <Card style={{border:"none", marginTop:"40px"}}>
-            <Card.Body style={{height:"610px",margin:"70px"}}>
-              <Card.Text style={{fontSize:"70px",fontFamily:"Josefin Slab", color:"black"}}>Test Log in</Card.Text>
+            <Card.Body style={{height:"400px",margin:"70px"}}>
+              <Card.Text style={{fontSize:"70px",fontFamily:"Josefin Slab", color:"black"}}>Log in</Card.Text>
               <Form >
                 <Form.Group >
                   <Form.Control id="username_input" style={{height:"60px",width:"350px", fontSize:"25px"}}

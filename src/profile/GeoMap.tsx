@@ -1,7 +1,6 @@
 import React from "react";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import { compose, withProps } from 'recompose';
-import { mapsApiKey } from './mapsApiKey';
 
 
 
@@ -20,7 +19,7 @@ export const MyMap =
   compose<MyMapProps, any>(
     withProps({
       googleMapURL:
-        `https://maps.googleapis.com/maps/api/js?key=${mapsApiKey}&v=3.exp&libraries=geometry,drawing,places`,
+        `https://maps.googleapis.com/maps/api/js?key='key'&v=3.exp&libraries=geometry,drawing,places`,
       loadingElement: <div style={{ height: `400px` }} />,
       containerElement: <div style={{ height: `400px` }} />,
       mapElement: <div style={{ height: `400px` }} />
